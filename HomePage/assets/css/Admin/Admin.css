@@ -1,0 +1,48 @@
+﻿body {
+    overflow: auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.content .status{
+    margin-top:2em;
+    width:660px;
+    border-bottom: 2px solid gray;
+    text-align:center;    
+}
+
+.content .status .title{
+    font-size: 2em;
+    padding-bottom:0.2em;
+    border-bottom: 2px solid gray;
+}
+
+.content .status th{
+    text-align:right;
+    width:120px;
+}
+
+.content .logArea{
+    width: 660px;  
+    margin-top:3em;
+}
+.content .logArea td, .content .logArea th{
+    height: 1em;
+}
+
+
+.logHeader {
+    padding: 3px 8px;
+    text-align: center;
+}
+
+.logItem {
+    text-align: center;
+    padding: 3px 8px;
+}
+

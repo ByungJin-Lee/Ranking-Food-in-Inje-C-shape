@@ -1,0 +1,208 @@
+﻿:root{
+    --star-size : 25px;
+}
+.content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.profile {
+    width: 660px;
+    height: 230px;    
+    margin-top: 2em;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1.5em;
+    box-shadow: 1.5px 1.5px 2px 1px rgba(0,0,0,0.4);
+    padding:0px;
+}
+.profile .proImage{
+    width:300px;
+    height:230px;    
+}
+    .profile .proImage img {
+        width: 300px;
+        height: 200px;
+        margin: 15px;
+        padding: 0px;        
+        box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.5);
+    }
+.profile .proTitle span{
+    font-size:1.3em;
+    font-weight:bold;
+}
+.profile .proCount span{
+    font-size:0.8em;
+}
+    .profile .proStarView{
+        position:relative;
+        z-index:10;
+        height:var(--star-size);
+    }
+    .profile .proStarView .onStar {
+        position:absolute;
+        top:0px;
+        width: calc(5*var(--star-size));
+        height: var(--star-size);
+        background-image: url("../../image/food/starListx1000W.png");
+        background-size: cover;
+    }
+.profile .proStarView .ga{
+    position:absolute;
+    background-color:yellow;
+    width:100%;
+    height:var(--star-size);
+    z-index:-1;
+}
+/*profile End*/
+
+/*commentinput*/
+.commentInput{
+    width:660px;
+    background-color:gray;     
+    border-radius:8px;
+    margin-top:2em;
+    box-shadow:1px 1px 1px 2px rgba(0,0,0,0.3);
+}
+.commentInput input[type="text"]{
+    width:420px;
+    height:1.3em;
+    margin: 3px;
+    border-radius:5px;
+    border-color:transparent;
+    background-color:lightgray;
+    outline:none;
+    padding:5px 10px;
+
+}
+.commentInput input[type="radio"]{
+    display:none;
+}
+.commentInput td:last-child{
+    background-color:#8b8b8b;
+    border-radius: 10px;
+}
+    .commentInput input[type="submit"] {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        width:4em;
+    }
+.commentInput .starProgress .labels{
+    position:absolute;
+    z-index:2;
+}
+.commentInput .starProgress label{    
+    display:inline-block;
+    width: var(--star-size);
+    height: var(--star-size);
+    cursor:pointer;
+}
+.commentInput .starProgress {       
+    font-size:0px;
+    position:relative;
+    top:0px;
+
+    height: var(--star-size);
+    width: calc(5* var(--star-size));    
+    box-shadow:0 0 3px -2px #000;    
+}
+.commentInput .starProgress .progressBack {
+    position:absolute;
+    width:inherit;
+    height:inherit;
+    z-index:1;    
+    background-image: url('../../image/food/starListx1000%20(1).png');
+    background-size: cover;
+}
+.commentInput .starProgress .progress{
+    position:absolute;
+    top:0px;
+    height: var(--star-size);
+    background-color:yellow;
+    width:0%;
+    transition:all 0.3s;
+    z-index:0;    
+}
+    .commentInput #ContentBody01_star1:checked ~ .starProgress .progress {
+        width: 20%;
+    }
+    .commentInput #ContentBody01_star2:checked ~ .starProgress .progress {
+        width: 40%;
+    }
+    .commentInput #ContentBody01_star3:checked ~ .starProgress .progress {
+        width: 60%;
+    }
+    .commentInput #ContentBody01_star4:checked ~ .starProgress .progress {
+        width: 80%;
+    }
+    .commentInput #ContentBody01_star5:checked ~ .starProgress .progress {
+        width: 100%;
+    }
+
+/*commentinput end*/
+.commentTable {
+    width: 660px;
+    margin-top: 1em;
+}
+.commentTable > div {
+    margin-bottom: 0.5em;
+    border-collapse: collapse;
+    /*background-color:lightsteelblue;*/
+    background-color: rgba(255,255,255,0.8);    
+    border-radius: 10px;           
+    border:1px solid rgba(0,0,0,0.3);
+    height:var(--star-size);
+}
+.commentTable > div span {
+    display: inline-block;
+    line-height: var(--star-size);
+    height: var(--star-size);
+}
+/*userName*/
+.commentTable > div > span:first-child {
+    width: 70px;
+    padding-left: 10px;    
+    font-weight: bold;
+    border-right: 1px dotted #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*comment*/
+.commentTable > div > span:nth-child(2) {
+    padding-left: 5px;
+    position:relative;
+    top:-5px;
+}
+/*star*/
+.commentTable > div > div {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: right;
+    display: inline-block;
+    width: calc(5 * var(--star-size));
+    padding-right:10px;
+    position: relative;
+    height: var(--star-size);
+    z-index: 0;
+    background-color: rgb(107,107,107);    
+}
+.commentTable > div > div div {
+    position: absolute;
+    top: 0px;
+    height: inherit;
+    width: 0px;
+    border-radius: inherit;
+}
+    .commentTable > div > div > div {
+        background-image: url("../../image/food/starListx1000 (1).png");
+        background-size: cover;
+        width: inherit;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 7px;
+    }
+.commentTable > div > div div div {
+    background-color: yellow;
+    z-index: -1;
+}
+

@@ -1,0 +1,92 @@
+﻿#header{
+    background-color:#e0e0e0;
+}
+#header .logo span {    
+    color: #000;    
+}
+#header .login {
+    display:none;
+}
+.content{
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:rgba(0, 0, 0, 0.5);    
+}
+.content .loginBox{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:1.2em;    
+    margin-top:-9em;
+    border-radius:1em;
+    padding:1em;
+}
+.content .loginBox .title {
+    color: rgba(0, 0, 0, 0.65);
+    font-size:2em;
+    font-weight:bold;    
+}
+.content .loginBox .loginTable{
+    text-align:right;
+    width:330px;
+}
+.content .loginBox .loginTable td{
+    padding:5px;
+}
+.content .loginBox .loginTable .line {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.content .loginBox .loginTable tr{
+    
+}
+.content .loginBox .input {
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    left: 0px;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+
+    transition-duration: 0.3s;
+}
+.content .loginBox .input:focus {
+    box-shadow: 0 0 0 1px #000;
+}
+.content .loginBox .loginBtn{
+    margin-top:10px;
+    background-color:rgba(0,0,0,0);
+    border:3px solid #000;
+    border-radius:15px;
+    padding:5px;
+    width:280px;
+    font-size:1em;
+    cursor:pointer;
+    transition:0.5s;
+}
+.content .loginBox .loginBtn:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+.content .loginBox .loginFail{
+    margin-top:5px;
+    font-size:0.7em;
+}
+.content .loginBox .tool{
+    margin-top:10px;
+    font-size:0.8em;
+}
+.content .loginBox .tool .toolItem:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+.content .loginBox .tool .toolItem::after {
+    content: "|";
+}
+.content .loginBox .tool .toolItem:last-child::after {
+    content: "";
+}
+

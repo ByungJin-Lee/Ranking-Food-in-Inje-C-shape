@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TargetDatabase>Teampl_1</TargetDatabase>
+    <StartupScript>(비어 있음)</StartupScript>
+    <StartAction>StartNone</StartAction>
+  </PropertyGroup>
+</Project>

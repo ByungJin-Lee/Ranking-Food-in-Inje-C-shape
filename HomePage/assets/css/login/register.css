@@ -1,0 +1,110 @@
+﻿#header {
+    background-color: #e0e0e0;
+}
+
+#header .logo span {
+    color: #000;
+}
+
+#header .login {
+    display: none;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.content .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.content .register .title {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: -5em;
+    padding-bottom: 1em;
+}
+
+.content .register .registerTable {
+    text-align: right;
+    width: 420px;
+}
+
+.content .register .registerTable td {
+    padding: 3px;
+}
+
+.content .register .registerTable .line {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.content .register .input {
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    position: relative;
+    left: 0px;
+    box-shadow: none;
+    color: #fff;
+    transition-duration:0.3s;
+}
+
+.content .register .input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #000;
+}
+
+.content .register .idBtn {
+    margin-top: 0px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 3px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content .register .idBtn:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.content .loginBox .loginFail {
+    margin-top: 5px;
+    font-size: 0.6em;
+}
+.content .register .genderBox {
+    display:flex;
+    justify-content:center;
+    font-size:0.9em;
+}
+.content .register .inputEmail{
+    width:170px;
+}
+.content .register .emailCheck{
+    display:block;
+    font-size:0.6em;
+}
+.content .register .registerBtn {
+    margin-top: 0px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.content .register .registerBtn:hover {
+    background-color: rgba(0,0,0,0.05);
+}

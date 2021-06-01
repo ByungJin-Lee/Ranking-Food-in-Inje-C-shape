@@ -1,0 +1,116 @@
+﻿#header {
+    background-color: #e0e0e0;
+}
+
+    #header .logo span {
+        color: #000;
+    }
+
+    #header .login {
+        display: none;
+    }
+
+.content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+    .content .find {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+        .content .find .title {
+            color: rgba(0, 0, 0, 0.65);
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-top: -5.5em;
+            padding-bottom: 0.5em;
+        }
+
+        .content .find .findTable {
+            text-align: right;
+            width: 300px;
+        }
+
+            .content .find .findTable td {
+                padding: 3px;
+            }
+            .content .find .st{
+                width:100px;
+            }
+
+            .content .find .findTable .line {
+                border-top: 1px solid rgba(0, 0, 0, 0.3);
+            }
+
+        .content .find .input {
+            display: block;
+            background-color: rgba(0,0,0,0.2);
+            border: 0px;
+            border-radius: 10px;
+            padding: 5px 10px;
+            position: relative;
+            left: 0px;
+            box-shadow: none;
+            color: #fff;
+            transition-duration: 0.3s;
+            width:170px;
+        }
+
+            .content .find .input:focus {
+                outline: none;
+                box-shadow: 0 0 0 1px #000;
+            }
+
+        .content .find .findBtn {
+            margin-top: 10px;
+            background-color: rgba(0,0,0,0);
+            border: 2px solid #000;
+            border-radius: 15px;
+            padding: 3px;
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: 0.5s;
+            width:260px;
+        }
+
+            .content .find .findBtn:hover {
+                background-color: rgba(0,0,0,0.05);
+            }
+
+    .content .find .alert {
+        margin-top: 5px;
+        font-size: 0.7em;
+    }
+
+    .content .find .explain{
+        font-size: 0.8em;
+    }
+    .content .warning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+    }
+        .content .warning .title {
+            color: rgba(255, 0, 0, 0.8);
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-top: -5em;
+            padding-bottom: 1em;
+        }
+        .content .warning .explain {
+            font-size: 1em;
+            color: rgba(255, 0, 0, 0.7);
+        }
+        .content .link{
+            font-size:0.8em;
+            margin-top:20px;
+            color: #000;
+        }

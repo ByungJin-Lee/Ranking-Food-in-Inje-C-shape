@@ -1,0 +1,26 @@
+﻿** 강조
+     다시 빌드될 테이블
+       [dbo].[userData]
+       [dbo].[userLog]
+     삭제될 클러스터형 인덱스
+       없음
+     생성될 클러스터형 인덱스
+       없음
+     데이터 문제가 있는 것 같습니다.
+       [dbo].[userLog].[Ip] 열이 삭제되므로 데이터 손실이 발생할 수 있습니다.
+       [dbo].[userLog] 테이블의 postItem 열 형식이  NVARCHAR (30) NOT NULL에서  NVARCHAR (15) NOT NULL(으)로 변경됩니다. 데이터가 손실될 수 있습니다.
+
+** 사용자 작업
+     삭제
+       [dbo].[DF__userData__certif__267ABA7A] (DEFAULT 제약 조건)
+       [dbo].[DF__userData__joinTi__25869641] (DEFAULT 제약 조건)
+       [dbo].[DF__userLog__time__276EDEB3] (DEFAULT 제약 조건)
+     테이블 다시 빌드
+       [dbo].[userData] (테이블)
+       [dbo].[userLog] (테이블)
+
+** 지원 동작
+
+[dbo].[userLog].[Ip] 열이 삭제되므로 데이터 손실이 발생할 수 있습니다.
+[dbo].[userLog] 테이블의 postItem 열 형식이  NVARCHAR (30) NOT NULL에서  NVARCHAR (15) NOT NULL(으)로 변경됩니다. 데이터가 손실될 수 있습니다.
+

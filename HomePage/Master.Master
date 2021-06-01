@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="HomePage.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>뭐 물래?</title>    
+        <link rel="stylesheet" href="~/assets/css/Master.css" type="text/css" runat="server" />
+        <%-- head --%>
+        <asp:ContentPlaceHolder ID="Header" runat="server">
+        </asp:ContentPlaceHolder>
+        <%-- head End --%>
+    </head>
+<body>  
+    <%-- header --%>
+    <header id="header"> 
+        <%-- logo --%>
+        <asp:HyperLink class="logo" runat="server" NavigateUrl="~/Home.aspx">
+            <div id="imageLogo"></div>
+            <span class="coolz">뭐 물래?</span>            
+        </asp:HyperLink>
+        <%-- admin button --%>        
+        <div>
+            <asp:HyperLink ToolTip="Go Log" ID="adminPage" runat="server" Visible="false" NavigateUrl="~/Page/Admin/Admin.aspx"></asp:HyperLink>        
+        </div>
+        <%-- user --%>
+        <div class="userPart">
+            <asp:HyperLink Visible="false" ID="userPro" runat="server"></asp:HyperLink>
+            <span>님</span>
+        </div>
+        <%-- login button --%>
+        <div class="login">
+            <asp:HyperLink ID="loginBtn" runat="server" NavigateUrl="~/Page/Login/login.aspx">Login</asp:HyperLink>
+            <asp:HyperLink ID="logoutBtn" Visible="false" runat="server" NavigateUrl="~/Page/Login/logout.aspx">Logout</asp:HyperLink>
+        </div>
+    </header>
+    <%-- header End --%>
+
+    <%-- content Area --%>
+    <form id="form1" runat="server">        
+            <asp:ContentPlaceHolder ID="ContentBody01" runat="server">
+            </asp:ContentPlaceHolder>        
+    </form>
+    <%-- content Area End --%>
+</body>
+</html>
